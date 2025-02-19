@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
           continue;
         }
       }
-
+//tt
       const timeStr = new Date().toLocaleTimeString();
       if (foundNewArbitrage) {
         elements.status.textContent = `Última atualização: ${timeStr} - Novas oportunidades encontradas!`;
