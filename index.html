@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CLICKBAIT ARB</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="header">
-      <h1>CLICKBAIT ARB</h1>
-      <div class="controls">
-        <div id="status">Carregando dados...</div>
-        <button id="toggleUpdates">Pausar Atualizações</button>
-      </div>
-    </div>
 
-    <div class="stats">
-      <div class="stat-card">
-        <h3>Pares Monitorados</h3>
-        <p id="monitored-pairs">0</p>
-      </div>
-      <div class="stat-card">
-        <h3>Maior Diferença</h3>
-        <p id="max-difference">0%</p>
-      </div>
-      <div class="stat-card">
-        <h3>Oportunidades</h3>
-        <p id="opportunities-count">0</p>
-      </div>
-    </div>
+<head>
+  <title>CLICKBAIT ARB</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Crypto</th>
-            <th>Bybit</th>
-            <th>CoinEx</th>
-            <th>Diferença</th>
-            <th>Diferença %</th>
-            <th>Oportunidade</th>
-          </tr>
-        </thead>
-        <tbody id="arbitrage-table-body"></tbody>
-      </table>
+<body>
+  <div class="header">
+    <h1>CLICKBAIT ARB</h1>
+    <div class="controls">
+      <div id="status">Carregando dados...</div>
     </div>
+  </div>
 
-    <script src="renderer.js"></script>
-  </body>
+  <div class="stats">
+
+    <div class="stat-card">
+      <h3>Maior Diferença</h3>
+      <p id="max-difference">0%</p>
+    </div>
+    <div class="stat-card">
+      <h3>Oportunidades</h3>
+      <p id="opportunities-count">0</p>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Crypto</th>
+          <th>Bybit</th>
+          <th>CoinEx</th>
+          <th>Diferença</th>
+          <th>Diferença %</th>
+          <th>Oportunidade</th>
+        </tr>
+      </thead>
+      <tbody id="arbitrage-table-body"></tbody>
+    </table>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+
 </html>

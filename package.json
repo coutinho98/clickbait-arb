@@ -1,6 +1,6 @@
 {
   "name": "crypto-arbitrage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aplicativo de arbitragem de criptomoedas",
   "author": "github.com/coutinho98",
   "main": "main.js",
@@ -16,22 +16,20 @@
       "executableName": "Clickbait Arb"
     },
     "nsis": {
-    "include": "build/installer.nsh",
-    "oneClick": "false",
-    "allowToChangeInstallationDirectory": true
+      "include": "build/installer.nsh",
+      "oneClick": "false",
+      "allowToChangeInstallationDirectory": true
     },
     "directories": {
       "output": "dist"
     }
-  },
-  "dependencies": {
-    "axios": "^1.7.9"
   },
   "arch": [
     "x64",
     "ia32"
   ],
   "devDependencies": {
+    "ccxt": "^4.4.61",
     "electron": "^28.3.3",
     "electron-builder": "^25.1.8"
   }

@@ -1,4 +1,3 @@
-// preload.js modificado para usar fetch ao invés de axios
 const { contextBridge } = require("electron");
 
 const api = {
@@ -18,7 +17,6 @@ const api = {
     }
   },
 
-  //mudar chamada da api para 'coinext' e não 'coinex'
   async getCoinExPrice(symbol) {
     try {
       const url = `https://api.coinex.com/v1/market/ticker?market=${symbol}`;
@@ -47,7 +45,6 @@ const api = {
     }
   },
 
-  //mudar chamada da api para 'coinext' e não 'coinex'
   async getCoinExPairs() {
     try {
       const url = "https://api.coinex.com/v1/market/list";
