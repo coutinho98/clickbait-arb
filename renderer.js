@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const elements = {
       status: document.getElementById("status"),
       tableBody: document.getElementById("arbitrage-table-body"),
-      monitoredPairs: document.getElementById("monitored-pairs"),
       maxDifference: document.getElementById("max-difference"),
       opportunitiesCount: document.getElementById("opportunities-count")
     };
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const commonPairs = await window.api.getCommonPairs();
       let foundNewArbitrage = false;
 
-      elements.monitoredPairs.textContent = commonPairs.length;
 
       for (const pair of commonPairs) {
         try {
@@ -96,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
           continue;
         }
       }
-//tt
+
       const timeStr = new Date().toLocaleTimeString();
       if (foundNewArbitrage) {
         elements.status.textContent = `Última atualização: ${timeStr} - Novas oportunidades encontradas!`;
